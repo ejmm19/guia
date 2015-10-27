@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Guía Turistica Moñitos</title>
+		<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels" />
+		<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/bootstrap.css">
+		 <link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/screen.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.sidr.light.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+	<body>
+
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="icon icon-world">Menú</h2>
+						<ul>
+							<li> 
+								
+								<a href="historia.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Historia</a>
+								<!--<div class="mp-level">
+									<h2 class="icon icon-display">Devices</h2>
+									<ul>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-phone" href="#">Mobile Phones</a>
+											<div class="mp-level">
+												<h2>Mobile Phones</h2>
+												<ul>
+													<li><a href="#">Super Smart Phone</a></li>
+													<li><a href="#">Thin Magic Mobile</a></li>
+													<li><a href="#">Performance Crusher</a></li>
+													<li><a href="#">Futuristic Experience</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#">Televisions</a>
+											<div class="mp-level">
+												<h2>Televisions</h2>
+												<ul>
+													<li><a href="#">Flat Superscreen</a></li>
+													<li><a href="#">Gigantic LED</a></li>
+													<li><a href="#">Power Eater</a></li>
+													<li><a href="#">3D Experience</a></li>
+													<li><a href="#">Classic Comfort</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-camera" href="#">Cameras</a>
+											<div class="mp-level">
+												<h2>Cameras</h2>
+												<ul>
+													<li><a href="#">Smart Shot</a></li>
+													<li><a href="#">Power Shooter</a></li>
+													<li><a href="#">Easy Photo Maker</a></li>
+													<li><a href="#">Super Pixel</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>-->
+							</li>
+							<li><a class="icon icon-food" href="restaurantes.html">Restaurantes</a></li>
+							<li><a class="icon icon-shop" href="hospedaje.html">Hospedaje</a></li>
+							<li><a class="icon icon-photo" href="entretenimiento.html">Entretenimiento</a></li>
+							<li><a class="icon icon-camera" href="sitiosturisticos.html">Sitios Turísticos</a></li>
+							<li >
+								<a href="#">Creditos</a>
+								<div class="mp-level ">
+									<h2 class="icon icon-arrow-left">Creditos</h2>
+									<ul>
+										<li><a href="#">Eric Js Martínez Muentes</a></li>
+										<li><a href="#">@Ejmm19</a></li>
+										<li><a href="#"></a></li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--<li><a class="icon icon-wallet" href="#">Sitios Turísticos</a></li>-->
+						</ul>
+					</div>
+				</nav>
+				<!-- /mp-menu -->
+
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+						<!-- Top Navigation <a href="#" id="trigger" class="menu-trigger">hola</a> -->
+						
+						<div class="content clearfix">
+							
+								<div class="menu_top navbar-fixed-top">
+									<center>
+										<div id="menu">
+									<ul>
+									<li >
+										<p><a href="#" id="trigger" class="menu-trigger"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a></p></li>
+									<li id="logoo">
+										<img src="img/guiapor.png" width="100%">
+									</li>
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+									</li>
+
+
+									</ul>
+									</div>
+
+									</center>
+
+									</div>
+								
+								
+							
+							<div class="baner">
+								<div class="col-sd-12">
+									<!--<div class="carousel slide" id="carousel-946050">
+										<ol class="carousel-indicators">
+											<li class="active" data-slide-to="0" data-target="#carousel-946050">
+											</li>
+											<li data-slide-to="1" data-target="#carousel-946050">
+											</li>
+											<li data-slide-to="2" data-target="#carousel-946050">
+											</li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="item active">
+												<img alt="Carousel Bootstrap First" src="img/artleo.com-6745.jpg">
+												<div class="carousel-caption">
+													<h4>
+														Hermoso lugar donde encotraras paz y tranquilidad!!
+													</h4>
+													<p>
+														Visitanos para tener el Grán Placer de Atenderte
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<img alt="Carousel Bootstrap Second" src="img/26a1c4ac9f36c07.jpg">
+												<div class="carousel-caption">
+													<h4>
+														Las Vacaciones que mereces en el lugar que mereces
+													</h4>
+													<p>
+														
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<img alt="Carousel Bootstrap Third" src="img/02.01.13.jpg">
+												<div class="carousel-caption">
+													<h4>
+														
+													</h4>
+													<p>
+														
+													</p>
+												</div>
+											</div>
+										</div> <a class="left carousel-control" href="#carousel-946050" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-946050" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+									</div>-->
+									<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img width="100%" src="img/artleo.com-6745.jpg"><div class="carousel-caption">
+													<label style="font-size:16px;">
+														Hermoso lugar donde encotraras paz y tranquilidad!!
+													</label>
+														
+													
+													<h>
+														Visitanos para tener el Grán Placer de Atenderte
+													</p>
+												</div></div>
+            <div class="swiper-slide"><img width="100%" src="img/26a1c4ac9f36c07.jpg"></div>
+            <div class="swiper-slide"><img width="100%" src="img/02.01.13.png"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+								</div>
+							</div>
+							
+									  
+									
+							<main class="content" role="main">
+
+
+<article class="post tag-superb tag-about-theme tag-information odd">
+<div class="post-inner">
+<header class="post-header">
+<h2 class="post-title"><a href="historia.html">Historia <br><span><img width="15%" src="img/edificio-de-la-universidad_318-67864.png" alt=""></span></a></h2>
+</header>
+<section class="post-excerpt">
+<p>El municipio de Moñitos no es un pubelo muy añejo, pero no quiere decir que no tenga una historia, En el tiempo recorrido desde antes de su fundación se empezaron a difundir diferentes versiones de el por que el nombre y haci la proveniencia de su gente cultura y raices</p>
+</section>
+
+<!--<span class="post-meta">
+<span><i class="fa fa-pencil"></i><a href="/author/anton/">Lodoss Team</a></span>
+<span><i class="fa fa-tag"></i><a href="/tag/superb/">superb</a>, <a href="/tag/about-theme/">about theme</a>, <a href="/tag/information/">information</a></span>
+<time datetime="2014-01-16"><i class="fa fa-calendar-o"></i>16 Jan 2014</time>
+</span>-->
+</div>
+</article>
+<article class="post tag-video tag-vimeo even">
+<div class="post-inner">
+<header class="post-header">
+<h2 class="post-title"><a href="restaurantes.html">Restaurantes<br><span><img width="15%" src="img/herramientas-alimenticios-restaurante-conjunto-de-tres-piezas_318-61020.png" alt=""></span></a></h2>
+</header>
+<section class="post-excerpt">
+<p>En Moñitos tenemos los mejores restaurantes con las comidas tipicas de la región y toda la sazón del caribe colombiano, te quedaras con las ganas de volver a probar las ricuras de nuestro mar</p>
+</section>
+<!--span class="post-meta">
+<span><i class="fa fa-pencil"></i><a href="/author/anton/">Lodoss Team</a></span>
+<span><i class="fa fa-tag"></i><a href="/tag/video/">video</a>, <a href="/tag/vimeo/">vimeo</a></span>
+<time datetime="2014-01-16"><i class="fa fa-calendar-o"></i>16 Jan 2014</time>
+</span>-->
+</div>
+</article>
+
+<article class="post tag-superb tag-about-theme tag-information odd">
+<div class="post-inner">
+<header class="post-header">
+<h2 class="post-title"><a href="hospedaje.html">Hospedaje <br><span><img width="15%" src="img/images.png" alt=""></span></a></h2>
+</header>
+<section class="post-excerpt">
+<p>Contamos con todas las comonidades para todos los gustos y todos los presupuestos, asi que eso no será nigun problema al momento de quedarte, por que donde lo hagas de seguro te vas a querer quedar </p>
+</section>
+<!--span class="post-meta">
+<span><i class="fa fa-pencil"></i><a href="/author/anton/">Lodoss Team</a></span>
+<span><i class="fa fa-tag"></i><a href="/tag/video/">video</a>, <a href="/tag/vimeo/">vimeo</a></span>
+<time datetime="2014-01-16"><i class="fa fa-calendar-o"></i>16 Jan 2014</time>
+</span>-->
+</div>
+</article>
+<article class="post tag-video tag-vimeo even">
+<div class="post-inner">
+<header class="post-header">
+<h2 class="post-title"></span><a href="entretenimiento.html">Entretenimiento <br><span><img width="10%" src="img/el-hombre-que-salta_318-73929.png" alt=""></a></span></h2>
+</header>
+<section class="post-excerpt">
+<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient &hellip;</p>
+</section>
+<!--<span class="post-meta">
+<span><i class="fa fa-pencil"></i><a href="/author/anton/">Lodoss Team</a></span>
+<span><i class="fa fa-tag"></i><a href="/tag/video/">video</a>, <a href="/tag/youtube/">youtube</a></span>
+<time datetime="2014-01-16"><i class="fa fa-calendar-o"></i>16 Jan 2014</time>
+</span>-->
+</div>
+</article>
+<article class="post tag-superb tag-about-theme tag-information odd">
+<div class="post-inner">
+<header class="post-header">
+<h2 class="post-title"><a href="sitiosturisticos.html">Sitios Turísticos <br><span><img width="10%" src="img/puntero-consejos_318-84640.png" alt=""></span></a></h2>
+</header>
+<section class="post-excerpt">
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor magna, gravida ut vestibulum quis, varius nec nisi. Pellentesque at consectetur lectus. Phasellus sed purus ornare, fringilla elit vitae, convallis mauris. Donec at adipiscing quam. Sed id tempus sem.&hellip;</p>
+</section>
+<!--<span class="post-meta">
+<span><i class="fa fa-pencil"></i><a href="/author/anton/">Lodoss Team</a></span>
+<span><i class="fa fa-tag"></i><a href="/tag/images/">images</a>, <a href="/tag/examples/">examples</a></span>
+<time datetime="2014-01-14"><i class="fa fa-calendar-o"></i>14 Jan 2014</time>
+</span>-->
+</div>
+</article>
+
+<!--<div class="pagination-wrapper">
+<nav class="pagination" role="pagination">
+<span class="page-number">Page 1 of 2</span>
+<a class="older-posts" href="/page/2/">Older Posts <i class="fa fa-long-arrow-right"></i></a>
+</nav>
+</div>-->
+
+</main>
+
+<footer class="site-footer">
+<div class="inner">
+<a class="subscribe icon-feed" href="http://superb.lodossteam.com/rss/"><i class="fa fa-rss"></i>Subscribe</a>
+<section class="copyright">copyright &copy; 2015</section>
+<center>@Ejmm19</center>
+</div>
+</footer>
+
+<script src="/public/jquery.min.js?v=d88ecd30d0"></script>
+
+<!-- Include jQuery -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- Include the Sidr JS -->
+<script type="text/javascript" src="js/jquery.sidr.min.js"></script>
+<!-- Include custom JS -->
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+								
+							</div>
+
+
+						</div>
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+			</div><!-- /pusher -->	
+				<script src="js/swiper.min.js"></script>	
+				<script src="js/classie.js"></script>
+				<script src="js/mlpushmenu.js"></script>
+				<script src="js/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+					        pagination: '.swiper-pagination',
+					        slidesPerView: 1,
+					        paginationClickable: true,
+					        spaceBetween: 30,
+					        keyboardControl: true,
+					        nextButton: '.swiper-button-next',
+					        prevButton: '.swiper-button-prev',
+					    });
+				</script>
+		<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+	</body>
+</html>
